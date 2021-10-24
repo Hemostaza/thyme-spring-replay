@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Uwtórz książkę</title>
+</head>
+<body>
+<h1>Utwórz autora</h1>
+<form th:object="${author}" method="post">
+    <label>Imię: <input type="text" th:field="*{firstName}"></label>
+    <label>Nazwisko: <input type="text" th:field="*{lastName}"></label>
+    <input type="submit">
+</form>
+</body>
+</html>
